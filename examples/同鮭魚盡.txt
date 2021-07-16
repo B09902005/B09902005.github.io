@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 24.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang TC'; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000; min-height: 17.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px Times; font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>同鮭魚盡</b></span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>題目敘述</b></span></h2>
+<p class="p3"><span class="s1">知名壽司企業「壽司狼」，日前推出一個折價活動，只要你的英文名字中，包含”salmon”這個字串，例如如果你的名字是salmonking，就可以獲得免費優待；如果名字中包含”sal”或”mon”的其中之一，或者兩者同時包含，例如你的名字是sally，或monkeyonsale，那可以獲得九折優惠；如果都沒有，那很可惜，就只能維持原價了。</span></p>
+<p class="p3"><span class="s1">已知，壽司狼的壽司價目分成十種：10元、20元、30元、40元、50元、60元、70元、80元、90元、100元，而壽司狼內部有一份清單，列出了所有消費者的名字，以及他們消費時，所購買的十種價位的壽司的數量。</span></p>
+<p class="p3"><span class="s1">請你幫壽司狼寫一份程式，讓他們在給定這份清單之後，對於清單其中的一位消費者，能夠算出那位消費者的消費金額。</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>輸入說明</b></span></h2>
+<p class="p3"><span class="s1">輸入第一行是一個正整數N，表示來消費的總人數，<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">接下來連續N行，分別有一個字串和十個正整數，分別表示這些人的名字，以及這十種壽司分別的數量（從10元列到100元）。可以確定這N個名字都不會重複。</span></p>
+<p class="p3"><span class="s1">最後一行，則是一個字串s，s一定是上面其中一個消費者的名字。</span></p>
+<p class="p3"><span class="s1">（限制：</span><span class="s2">1 &lt;= N &lt;= 50</span><span class="s1">，1 &lt;= 每個名字的字母數 &lt;= 50，0 &lt;= 每種壽司數量 &lt;= 100）</span></p>
+<p class="p3"><span class="s1">（方便起見，這裡每個人的名字都只會出現小寫字母，而不會有大寫字母或是非字母的符號）</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>輸出說明</b></span></h2>
+<p class="p3"><span class="s1">輸出一個正整數，是那個名字為s的消費者的消費金額。(後面不用換行)</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>範例輸入1</b></span></h2>
+<p class="p4"><span class="s1">1</span></p>
+<p class="p4"><span class="s1">zhangsalmondreams 100 100 100 100 100 100 100 100 100 100</span></p>
+<p class="p4"><span class="s1">zhangsalmondreams</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>範例輸出1</b></span></h2>
+<p class="p5"><span class="s1">0</span></p>
+<p class="p2"><span class="s1"><b>範例輸入2</b></span></p>
+<p class="p5"><span class="s1">3</span></p>
+<p class="p5"><span class="s1">monkey 1 0 0 0 0 0 0 0 0 0</span></p>
+<p class="p5"><span class="s1">salad 0 1 0 0 0 0 0 0 0 0</span></p>
+<p class="p5"><span class="s1">saladmonkey 0 0 1 0 0 0 0 0 0 0</span></p>
+<p class="p5"><span class="s1">saladmonkey</span></p>
+<p class="p2"><span class="s1"><b>範例輸出2</b></span></p>
+<p class="p5"><span class="s1">27</span></p>
+<p class="p2"><span class="s1"><b>範例輸入3</b></span></p>
+<p class="p5"><span class="s1">3</span></p>
+<p class="p5"><span class="s1">a 8 7 5 6 4 2 3 1 0 0</span></p>
+<p class="p5"><span class="s1">monmonmonmon 0 9 8 7 6 5 4 3 2 1</span></p>
+<p class="p5"><span class="s1">sprout 1 1 1 1 1 1 1 1 1 1</span></p>
+<p class="p5"><span class="s1">sprout</span></p>
+<p class="p2"><span class="s1"><b>範例輸出3</b></span></p>
+<p class="p5"><span class="s1">550</span></p>
+<p class="p2"><span class="s1"><b>範例說明</b></span></p>
+<p class="p3"><span class="s1">1. zhangsalmondreams內部已經包含salmon字串，因此享有免費優惠。</span></p>
+<p class="p3"><span class="s1">2. saladmonkey內部有sal或mon，因此享九折優惠，只要付 30*0.9 = 27元。</span></p>
+<p class="p3"><span class="s1">3. sprout內部沒有sal，也沒有mon，因此付原價：(10 + 20 + … + 100) * 1 = 550元。</span></p>
+<p class="p6"><span class="s1"><b>閒聊</b></span></p>
+<p class="p3"><span class="s1">本題目純屬虛構，如與事實雷同純屬巧合。</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1"><b>提示（鼓勵同學先自己想想看，如果做不出來再參考這份提示）</b></span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s1">你可以把你的程式分成三個部分：cin資料、算折價的優惠、算最後的價錢。</span></p>
+<p class="p3"><span class="s1">1. cin資料：你可以先cin N，再用for迴圈把中間N行的資料都cin進陣列中，最後再cin s字串。（要注意字串和int要存在不同陣列裡，不能存在同一個陣列。）</span></p>
+<p class="p3"><span class="s1">2.算折價的優惠：你可以設一個變數，並利用一連串的 if 或 else 等操作（這裡要注意 if 和 else if 的差別），搭配find來尋找名字裡有沒有你想找的子字串，來決定那個變數應該是0還是0.9還是1。（注意那個變數有可能是0.9，所以變數的型態不能是int）</span></p>
+<p class="p3"><span class="s1">3.算價錢：你可以先利用for迴圈，找到中間Ｎ行資料中，哪一行才是你要找的，找到後再對那一行的後面十個數字去算出那個人所應該付的原價，最後再乘以你剛剛所算出的折價優惠，再cout出來就可以了。</span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1"></span><br></p>
+</body>
+</html>
